@@ -49,6 +49,7 @@ class App
 
         github = new Github
             username: "anonymous"
+            password: "blah"
 
         @gist = github.getGist(@gistId)
         
