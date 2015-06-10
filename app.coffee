@@ -48,8 +48,7 @@ class App
         #    auth: "oauth"
 
         github = new Github
-            username: "anonymous"
-            password: "blah"
+            username: "garyballantyne"
 
         @gist = github.getGist(@gistId)
         
