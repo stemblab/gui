@@ -1,0 +1,13 @@
+[
+    {"comment": "table stuff"},
+    "http://handsontable.com/dist/handsontable.full.js",
+    "http://stemblab.github.io/gui-table/table.css",
+    {"url": "dev.json", "id": "dev"},
+    "github.js",
+    "main.html",
+    "main.css",
+    "sheet.coffee",
+    "component.coffee",
+    "http://stemblab.github.io/gui-table/table.coffee",
+    "app.coffee"
+]
