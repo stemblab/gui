@@ -38,8 +38,11 @@ class App
 
     # from dev.json
     dev = $blab.resource "dev"
-    token: dev.token
-    gistId: dev.gistId
+    #token: dev.token
+    #gistId: dev.gistId
+    username: "anonymous"
+    password:
+    auth: "basic"
     
     constructor: ->
         
