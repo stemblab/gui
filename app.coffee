@@ -37,18 +37,20 @@ $blab.compute = ()->
 class App
 
     # from dev.json
-    dev = $blab.resource "dev"
-        #token: dev.token
-        #gistId: dev.gistId
-        username: "anonymous"
-        password:
-        auth: "basic"
+    #dev = $blab.resource "dev"
+    #token: dev.token
+    #gistId: dev.gistId
     
     constructor: ->
         
+        #github = new Github
+        #    token: @token
+        #    auth: "oauth"
+
         github = new Github
-            token: @token
-            auth: "oauth"
+            username: "anonymous"
+            password:
+            auth: "basic"
 
         @gist = github.getGist(@gistId)
         
