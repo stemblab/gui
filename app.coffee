@@ -40,18 +40,17 @@ class App
     #dev = $blab.resource "dev"
     #token: dev.token
     #gistId: dev.gistId
+    gistId: "9a18fe6158f60f061ba8"
+    userName: "garyballantyne"
     
     constructor: ->
         
-        #github = new Github
-        #    token: @token
-        #    auth: "oauth"
-
         github = new Github
-            username: "garyballantyne"
+            #    token: @token
+            #    auth: "oauth"
+            username: @userName
 
-        #@gist = github.getGist(@gistId)
-        @gist = github.getGist("9a18fe6158f60f061ba8")
+        @gist = github.getGist(@gistId)
         
         $("#widget-menu").menu select: (event, ui) ->
             switch ui.item[0].innerHTML
