@@ -50,7 +50,8 @@ class App
         github = new Github
             username: "garyballantyne"
 
-        @gist = github.getGist(@gistId)
+        #@gist = github.getGist(@gistId)
+        @gist = github.getGist("9a18fe6158f60f061ba8")
         
         $("#widget-menu").menu select: (event, ui) ->
             switch ui.item[0].innerHTML
